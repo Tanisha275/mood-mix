@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+dataset.csv
+.env
+__pycache__/
+*.pyc
+.venv/
+dataset.csv
+.cache
+explore.py
+spotify_connect.py

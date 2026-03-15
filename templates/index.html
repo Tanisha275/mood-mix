@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Mix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-title">Mood Mix</div>
+        <div class="hero-sub">Tell us how you feel. We'll find your soundtrack.</div>
+    </div>
+
+    <div class="vinyl-grid">
+
+        <div class="vinyl-wrap" onclick="selectMood('happy')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta1" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba1" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#d63a6e"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#a8235a" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#a8235a" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#a8235a" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#a8235a" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#8e1a48" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">☀️</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ta1" startOffset="50%" text-anchor="middle">HAPPY</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ba1" startOffset="50%" text-anchor="middle">HAPPY</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">happy</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('sad')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta2" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba2" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#7b3f8c"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#5a2070" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#5a2070" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#5a2070" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#5a2070" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#3d1050" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">🌧️</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ta2" startOffset="50%" text-anchor="middle">SAD</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ba2" startOffset="50%" text-anchor="middle">SAD</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">sad</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('energetic')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta3" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba3" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#e84545"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#b52020" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#b52020" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#b52020" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#b52020" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#801010" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">⚡</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="1.5" opacity="0.9"><textPath href="#ta3" startOffset="50%" text-anchor="middle">ENERGETIC</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="1.5" opacity="0.9"><textPath href="#ba3" startOffset="50%" text-anchor="middle">ENERGETIC</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">energetic</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('calm')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta4" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba4" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#3a7bd5"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#1f5aaa" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#1f5aaa" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#1f5aaa" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#1f5aaa" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#0d3a7a" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">🌊</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ta4" startOffset="50%" text-anchor="middle">CALM</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ba4" startOffset="50%" text-anchor="middle">CALM</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">calm</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('angry')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta5" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba5" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#c0392b"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#922b21" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#922b21" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#922b21" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#922b21" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#5c1a14" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">🔥</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ta5" startOffset="50%" text-anchor="middle">ANGRY</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2.5" opacity="0.9"><textPath href="#ba5" startOffset="50%" text-anchor="middle">ANGRY</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">angry</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('nostalgic')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta6" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba6" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#b05e2a"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#7d3f12" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#7d3f12" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#7d3f12" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#7d3f12" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#4a2008" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">🍂</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="1.5" opacity="0.9"><textPath href="#ta6" startOffset="50%" text-anchor="middle">NOSTALGIC</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="1.5" opacity="0.9"><textPath href="#ba6" startOffset="50%" text-anchor="middle">NOSTALGIC</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">nostalgic</div>
+        </div>
+
+        <div class="vinyl-wrap" onclick="selectMood('romantic')">
+            <div class="vinyl">
+                <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                    <defs><path id="ta7" d="M 18,55 A 37,37 0 0,1 92,55"/><path id="ba7" d="M 92,55 A 37,37 0 0,1 18,55"/></defs>
+                    <circle cx="55" cy="55" r="54" fill="#c44569"/>
+                    <circle cx="55" cy="55" r="48" fill="none" stroke="#8e2040" stroke-width="1" opacity="0.4"/>
+                    <circle cx="55" cy="55" r="42" fill="none" stroke="#8e2040" stroke-width="1" opacity="0.35"/>
+                    <circle cx="55" cy="55" r="36" fill="none" stroke="#8e2040" stroke-width="0.8" opacity="0.3"/>
+                    <circle cx="55" cy="55" r="28" fill="none" stroke="#8e2040" stroke-width="0.8" opacity="0.25"/>
+                    <circle cx="55" cy="55" r="22" fill="#5a0f28" opacity="0.9"/>
+                    <text x="55" y="62" text-anchor="middle" font-size="16" fill="white">🌹</text>
+                    <circle cx="55" cy="55" r="4" fill="#1a0a10"/>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2" opacity="0.9"><textPath href="#ta7" startOffset="50%" text-anchor="middle">ROMANTIC</textPath></text>
+                    <text font-size="7.5" font-family="DM Sans,sans-serif" font-weight="700" fill="white" letter-spacing="2" opacity="0.9"><textPath href="#ba7" startOffset="50%" text-anchor="middle">ROMANTIC</textPath></text>
+                </svg>
+            </div>
+            <div class="vinyl-label">romantic</div>
+        </div>
+
+    </div>
+
+    <div class="divider">— or describe your mood —</div>
+
+    <div class="input-row">
+        <input type="text" id="mood-input" placeholder="I'm feeling nostalgic and a little melancholic...">
+        <input type="text" id="genre-input" placeholder="Genre (optional)">
+        <button onclick="submitMood()">Go</button>
+    </div>
+
+    <div id="result-section" style="display:none;">
+        <div class="detected-mood">
+            <span class="mood-pill" id="mood-pill"></span>
+        </div>
+        <div class="playlist-header">🎧 Your Playlist</div>
+        <div id="playlist"></div>
+    </div>
+
+    <script>
+ function playYoutube(index, title, artist) {
+    const container = document.getElementById(`yt-${index}`);
+    
+    if (container.innerHTML) {
+        container.style.display = container.style.display === "none" ? "block" : "none";
+        return;
+    }
+
+    fetch("/youtube", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, artist })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.video_id) {
+            container.innerHTML = `
+                <iframe 
+                    width="100%" 
+                    height="200" 
+                    src="https://www.youtube.com/embed/${data.video_id}" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen
+                    onerror="this.style.display='none'">
+                </iframe>
+                <a href="https://www.youtube.com/watch?v=${data.video_id}" 
+                   target="_blank" 
+                   class="lastfm-link" 
+                   style="display:block;margin-top:0.4rem;">
+                   🎬 Can't embed? Watch on YouTube
+                </a>`;
+            container.style.display = "block";
+        } else {
+            container.innerHTML = "<p style='color:#c44569;font-size:0.85rem;padding:0.5rem 0;'>No video found.</p>";
+            container.style.display = "block";
+        }
+    });
+}
+function tryEmbed(container, videoIds, index) {
+    if (index >= videoIds.length) {
+        container.innerHTML = "<p style='color:#c44569;font-size:0.85rem;'>No embeddable video found.</p>";
+        container.style.display = "block";
+        return;
+    }
+
+    const videoId = videoIds[index];
+    container.style.display = "block";
+    container.innerHTML = `
+        <iframe 
+            width="100%" 
+            height="200" 
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>`;
+
+    setTimeout(() => {
+        fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`)
+            .then(r => { if (!r.ok) tryEmbed(container, videoIds, index + 1); })
+            .catch(() => tryEmbed(container, videoIds, index + 1));
+    }, 2000);
+}
+        function selectMood(mood) {
+            document.getElementById("mood-input").value = mood;
+            submitMood();
+        }
+
+        function submitMood() {
+            const mood = document.getElementById("mood-input").value.trim();
+            const genre = document.getElementById("genre-input").value.trim();
+            if (!mood) return;
+
+            document.getElementById("result-section").style.display = "none";
+            document.getElementById("playlist").innerHTML = "<p style='text-align:center;color:#c44569;'>Finding your perfect songs...</p>";
+            document.getElementById("result-section").style.display = "block";
+
+            fetch("/recommend", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ mood, genre })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("mood-pill").textContent = "✨ " + data.mood.toUpperCase();
+
+                const playlist = document.getElementById("playlist");
+                playlist.innerHTML = "";
+
+                data.songs.forEach((song, i) => {
+                    const tags = song.tags.map(t => `<span class="tag">${t}</span>`).join(" ");
+                    const listeners = song.listeners ? `👥 ${song.listeners.toLocaleString()} listeners` : "";
+                    playlist.innerHTML += `
+                        <div class="song-card">
+                            <div class="song-number">Track ${String(i+1).padStart(2,"0")}</div>
+                            <div class="song-title">${song.title}</div>
+                            <div class="song-meta">
+                                <span>🎤 ${song.artist}</span>
+                                <span>🔥 ${song.popularity} popularity</span>
+                                <span>${listeners}</span>
+                                <a class="lastfm-link" href="${song.url}" target="_blank">▶ Last.fm</a>
+                                <a class="lastfm-link" href="javascript:void(0)" onclick="playYoutube(${i}, '${song.title.replace(/'/g, "\\'")}', '${song.artist.replace(/'/g, "\\'")}')">▶ Play</a>
+                            </div>
+                            <div style="margin-top:0.4rem">${tags}</div>
+                            <div id="yt-${i}" style="display:none; margin-top:0.8rem; border-radius:12px; overflow:hidden;"></div> 
+                        </div>`;
+                });
+            });
+        }
+
+        document.getElementById("mood-input").addEventListener("keypress", function(e) {
+            if (e.key === "Enter") submitMood();
+        });
+    </script>
+
+</body>
+</html>
