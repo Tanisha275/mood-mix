@@ -2,8 +2,16 @@ import pandas as pd
 from mood_map import get_mood_features
 from lastfm import get_track_info
 
-df = pd.read_csv("dataset.csv")
+import os
 
+def load_dataset():
+    if os.path.exists("dataset.csv"):
+        return pd.read_csv("dataset.csv")
+    else:
+        url = "https://drive.google.com/uc?id=1clAjCMbcAlt6Sm8ixrhZhOAjsWiAjmA7"
+        return pd.read_csv(url)
+
+df = load_dataset()
 def recommend_songs(mood, genre=None, limit=10):
     features = get_mood_features(mood)
     
